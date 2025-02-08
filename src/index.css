@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden;
+
+}
+/* Rubik Regular */
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("./Assests/fonts/Rubik-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Rubik Bold */
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url("./Assests/fonts/Rubik-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Rubik ExtraBold */
+@font-face {
+  font-family: "Rubik-ExtraBold";
+  src: url("./Assests/fonts/Rubik-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Rubik Medium */
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("./Assests/fonts/Rubik-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Rubik SemiBold */
+@font-face {
+  font-family: "Rubik-SemiBold";
+  src: url("./Assests/fonts/Rubik-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Rubik Light */
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("./Assests/fonts/Rubik-Light.ttf") format("truetype");
+
+  font-style: normal;
+}
+
+.jobCategory {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+
+.jobCategoryButton{
+  display: flex;
+  width: 200px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .jobCategory {
+    flex-direction: row;
+  }
+  .jobCategoryButton{
+    font-size: 14px;
+  }
+}
+
+.jobType {
+  display:flex ;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 1024px) {
+  .jobCategory {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: fit-content;
+  }
+
+  .jobCategoryButton{
+    width: 260px;
+    font-size: 18px;
+  }
+}
+
